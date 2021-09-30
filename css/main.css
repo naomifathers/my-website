@@ -87,17 +87,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* UNIVERSAL STYLES */
+  /* UNIVERSAL STYLES */
 
-   html,
-   body {
+   body,
+   html {
      color: #1a1a1a;
      font-family: 'Arimo', sans-serif;
      font-size: 16px;
      text-align: center;
    }
 
-   li,
+   a:link,
+   a:visited {
+     color: #fff;
+     font-family: 'Roboto Mono', sans-serif;
+     text-decoration: none;
+     text-transform: uppercase;  
+   }
+   
    h1,
    h2 {
      font-family: 'Roboto Mono', sans-serif;
@@ -105,68 +112,71 @@ textarea {
    }
 
    h2 {
-    font-size: 1.3em;
-  }
+     font-size: 1.3em;
+   }
 
-  section,
-  footer {
-    padding: 10px;
-  }
+   footer,
+   section {
+     padding: 20px;
+   }
 
-  ul {
-    padding-inline-start: 0;
-  }
-
-
-   /* HEADER */
-
-   nav ul {
+   ul {
      background-color: #71a372;
-     color: #fff;
      display: flex;
      justify-content: space-around;
      list-style-type: none;
      padding: 5px;
-   }
+     padding-inline-start: 0;
+  }
+
+  /* HEADER */
+
+  nav {
+     padding-top: 10px;
+  }
 
    /* MAIN */
 
    h1 {
-    font-size: 1.8em;
-    color: #71a372;
-    padding: 30px 20px;
-    text-align: left;
-  }
-
-  #portfolio {
-    background-color: #eee;
-    height: 400px;
+     font-size: 1.8em;
+     color: #71a372;
+     padding: 30px 20px;
+     text-align: left;
   }
 
   #services {
-   
+     background-color: #eee;
+  }
+
+  #portfolio span {
+     font-weight: bold;
+  }
+
+  #portfolio img {
+     border: 4px solid #4d4d4d;
+     margin: 10px 0;
+     width: 80%;
   }
 
    #about {
      background-color: #eee;
-    
-   }
+  }
 
- 
-
-   section img {
+   #about img {
      border-radius: 50%;
      width: 50%;
    }
 
    /* FOOTER */
 
-   #social ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+   #email {
+     font-weight: bold;
    }
 
+   #social ul {
+     margin: 40px 0;
+   }
+   
 
 /* ==========================================================================
    Helper classes
