@@ -125,8 +125,8 @@ textarea {
      display: flex;
      justify-content: space-around;
      list-style-type: none;
-     padding: 5px;
-     padding-inline-start: 0;
+     padding: 10px;
+     
   }
 
   /* HEADER */
@@ -169,8 +169,19 @@ textarea {
 
    /* FOOTER */
 
+   footer {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
    #email {
      font-weight: bold;
+   }
+
+   #social {
+     width: 80%;
    }
 
    #social ul {
