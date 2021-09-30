@@ -91,41 +91,68 @@ textarea {
 
    html,
    body {
+     color: #1a1a1a;
+     font-family: 'Arimo', sans-serif;
      font-size: 16px;
-   }
-
-   section,
-   footer {
      text-align: center;
    }
 
-   ul {
-     padding: 0;
+   li,
+   h1,
+   h2 {
+     font-family: 'Roboto Mono', sans-serif;
+     text-transform: uppercase;
    }
+
+   h2 {
+    font-size: 1.3em;
+  }
+
+  section,
+  footer {
+    padding: 10px;
+  }
+
+  ul {
+    padding-inline-start: 0;
+  }
 
 
    /* HEADER */
 
    nav ul {
+     background-color: #71a372;
+     color: #fff;
      display: flex;
      justify-content: space-around;
      list-style-type: none;
+     padding: 5px;
    }
 
    /* MAIN */
 
-   #headline {
-     text-align: left;
-   }
+   h1 {
+    font-size: 1.8em;
+    color: #71a372;
+    padding: 30px 20px;
+    text-align: left;
+  }
 
-   #portfolio {
-     background-color: #eee;
-     height: 400px;
-   }
+  #portfolio {
+    background-color: #eee;
+    height: 400px;
+  }
+
+  #services {
+   
+  }
 
    #about {
      background-color: #eee;
+    
    }
+
+ 
 
    section img {
      border-radius: 50%;
