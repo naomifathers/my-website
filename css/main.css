@@ -96,52 +96,50 @@ textarea {
 
    body,
    html {
-     color: #152A3E;
-     font-family: 'Lekton', sans-serif;
-     font-size: 16px;
-     text-align: center;
+    color: #152A3E;
+    font-family: 'Lekton', sans-serif;
+    font-size: 16px;
+    text-align: center;
    }
 
    a:link,
    a:visited {
-     color: #152A3E;
-     font-weight: bold;
-     text-decoration: none;
-     text-transform: uppercase;  
+    color: #152A3E;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;  
    }
    
    h1,
    h2,
    h3 {
-     font-family: 'Lexend Tera', sans-serif;
+    font-family: 'Lexend Tera', sans-serif;
    }
 
    h2 {
-     font-size: 1.3em;
+    font-size: 1.3em;
+    padding-bottom: 20px;
    }
+
+   h3 {
+    padding: 20px;
+  }
 
    footer,
    section {
-     padding: 40px 20px;
+    padding: 40px 20px;
    }
 
    ul {
-     display: flex;
-     justify-content: space-around;
-     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
   }
 
   p {
     padding: 10px 0;
   }
 
-  section h2 {
-    padding-bottom: 20px;
-  }
-
-  section h3 {
-    padding: 20px;
-  }
 
   /* HEADER */
 
@@ -175,75 +173,71 @@ textarea {
 
    /* MAIN */
 
-   #services {
-
+   #projects {
+    background-color: #F7E8E8; 
    }
 
-   #projects {
-     align-items: center;
-     background-color: #F7E8E8; 
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+   .projects-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    }
 
    .project-card {
-     padding: 15px 0;
+    padding: 15px 0;
    }
 
    .project-card p {
     margin-bottom: 20px;
    }
 
-   .project-card span {
-     background-color: #152A3E;
-     border-radius: 30px;
-     padding: 10px;
-   }
-
    .project-card a {
     color: #fff;
     font-weight: normal;
+    background-color: #152A3E;
+    border-radius: 30px;
+    padding: 10px;
    }
 
   #projects img {
-     box-shadow: 10px 10px 5px grey;
-     margin: 10px 0;
-     width: 80%;
+    box-shadow: 10px 10px 5px grey;
+    margin: 10px 0;
+    width: 80%;
   }
 
    #about img {
-     border-radius: 50%;
-     margin-bottom: 15px;
-     width: 50%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 50%;
    }
 
    /* FOOTER */
 
    footer {
-     align-items: center;
-     background-color: #F7E8E8;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     padding: 50px 0;
+    align-items: center;
+    background-color: #F7E8E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
    }
 
    #email {
-     font-weight: bold;
+    font-weight: bold;
    }
 
    #social {
-     width: 80%;
-     padding: 20px 0;
+    width: 80%;
+    padding: 20px 0;
    }
 
    #social ul {
-     margin: 20px 0;
+    margin: 20px 0;
    }
 
    #copyright {
-     padding: 20px 0;
+    padding: 20px 0;
    }
    
 
@@ -335,8 +329,51 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* TABLET STYLES */
+
+  /* General */
+
+  footer,
+  section {
+    padding: 60px 50px;
+   }
+
+  /* Header */
+
+  nav {
+    padding: 60px 0 60px;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
+  /* Main */
+
+  .projects-container {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+   }
+
+   .project-card {
+    width: 45%;
+    margin: 10px;
+   }
+
+   #about img {
+    width: 40%;
+    margin: 20px 0 30px;
+   }
+
+   /* Footer */
+
+   #social {
+    width: 50%;
+   }
+  
 }
 
 @media print,
