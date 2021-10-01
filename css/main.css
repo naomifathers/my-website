@@ -89,26 +89,31 @@ textarea {
 
   /* UNIVERSAL STYLES */
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
    body,
    html {
-     color: #1a1a1a;
-     font-family: 'Arimo', sans-serif;
+     color: #152A3E;
+     font-family: 'Lekton', sans-serif;
      font-size: 16px;
      text-align: center;
    }
 
    a:link,
    a:visited {
-     color: #fff;
-     font-family: 'Roboto Mono', sans-serif;
+     color: #152A3E;
+     font-weight: bold;
      text-decoration: none;
      text-transform: uppercase;  
    }
    
    h1,
-   h2 {
-     font-family: 'Roboto Mono', sans-serif;
-     text-transform: uppercase;
+   h2,
+   h3 {
+     font-family: 'Lexend Tera', sans-serif;
    }
 
    h2 {
@@ -117,53 +122,99 @@ textarea {
 
    footer,
    section {
-     padding: 20px;
+     padding: 40px 20px;
    }
 
    ul {
-     background-color: #71a372;
      display: flex;
      justify-content: space-around;
      list-style-type: none;
-     padding: 10px;
-     
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  section h2 {
+    padding-bottom: 20px;
+  }
+
+  section h3 {
+    padding: 20px;
   }
 
   /* HEADER */
 
-  nav {
-     padding-top: 10px;
+  header {
+    background-color: #F7E8E8;
   }
+
+  nav {
+    padding: 30px 0 60px;
+  }
+
+  nav li {
+    font-size: .85rem;
+  }
+
+  nav span {
+    background-color: #e8b14c;
+    border-radius: 30px;
+    padding: 8px;
+  }
+
+  h1 {
+    background-color: #F7E8E8;
+    font-size: 1.8em;
+    margin: 0 0 30px;
+ }
+
+ header p {
+   padding: 0 0 50px;
+ }
 
    /* MAIN */
 
-   h1 {
-     font-size: 1.8em;
-     color: #71a372;
-     padding: 30px 20px;
-     text-align: left;
-  }
+   #services {
 
-  #services {
-     background-color: #eee;
-  }
+   }
 
-  #portfolio span {
-     font-weight: bold;
-  }
+   #projects {
+     align-items: center;
+     background-color: #F7E8E8; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
 
-  #portfolio img {
-     border: 4px solid #4d4d4d;
+   .project-card {
+     padding: 15px 0;
+   }
+
+   .project-card p {
+    margin-bottom: 20px;
+   }
+
+   .project-card span {
+     background-color: #152A3E;
+     border-radius: 30px;
+     padding: 10px;
+   }
+
+   .project-card a {
+    color: #fff;
+    font-weight: normal;
+   }
+
+  #projects img {
+     box-shadow: 10px 10px 5px grey;
      margin: 10px 0;
      width: 80%;
   }
 
-   #about {
-     background-color: #eee;
-  }
-
    #about img {
      border-radius: 50%;
+     margin-bottom: 15px;
      width: 50%;
    }
 
@@ -171,9 +222,11 @@ textarea {
 
    footer {
      align-items: center;
+     background-color: #F7E8E8;
      display: flex;
      flex-direction: column;
      justify-content: center;
+     padding: 50px 0;
    }
 
    #email {
@@ -182,10 +235,15 @@ textarea {
 
    #social {
      width: 80%;
+     padding: 20px 0;
    }
 
    #social ul {
-     margin: 40px 0;
+     margin: 20px 0;
+   }
+
+   #copyright {
+     padding: 20px 0;
    }
    
 
