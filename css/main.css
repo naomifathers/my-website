@@ -239,6 +239,10 @@ textarea {
    #copyright {
     padding: 20px 0;
    }
+
+   #donuts {
+     font-size: .75rem;
+   }
    
 
 /* ==========================================================================
@@ -349,6 +353,10 @@ textarea {
     font-size: 1rem;
   }
 
+  header p {
+    font-size: 1.2rem;
+  }
+
   /* Main */
 
   .projects-container {
@@ -370,10 +378,57 @@ textarea {
 
    /* Footer */
 
+   footer {
+     padding-bottom: 20px;
+   }
+
    #social {
     width: 50%;
    }
   
+}
+
+@media only screen and (min-width: 1200px) {
+  /* DESKTOP STYLES */
+
+  /* Header */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* Main */
+
+  #about img {
+    width: 20%;
+    height: 20%;
+    margin-right: 50px;
+  }
+
+  .about-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .about-text {
+    width: 40%;
+    text-align: left;
+  }
+  #about h2 {
+    text-indent: -95px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding-bottom: 20px;
+  }
+
+  #social {
+    width: 20%;
+  }
+
 }
 
 @media print,
