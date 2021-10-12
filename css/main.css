@@ -206,6 +206,18 @@ textarea {
     width: 80%;
     }
 
+    #skills ul {
+      flex-direction: column;
+    }
+
+    #skills li {
+      padding: 10px 0;
+    }
+
+    #about {
+      background-color: #F7E8E8; 
+    }
+
     #about img {
     border-radius: 50%;
     margin-bottom: 15px;
@@ -217,7 +229,6 @@ textarea {
    footer {
     display: flex;
     align-items: center;
-    background-color: #F7E8E8;
     flex-direction: column;
     justify-content: center;
     padding: 50px 0;
@@ -371,6 +382,19 @@ textarea {
     margin: 10px;
    }
 
+   #skills ul {
+     align-items: center;
+     flex-flow: row wrap;
+     justify-content: center;
+   }
+
+   #skills li {
+     background-color: #F7E8E8;
+     margin: 10px;
+     padding: 10px;
+     width: 45%;
+   }
+
    #about img {
     width: 40%;
     margin: 20px 0 30px;
@@ -409,6 +433,14 @@ textarea {
 
   /* Main */
 
+  #skills {
+    padding: 100px 0;
+  }
+
+  #skills li {
+    width: 25%;
+  }
+
   #about img {
     height: 20%;
     width: 20%;
@@ -424,10 +456,6 @@ textarea {
   .about-text {
     text-align: left;
     width: 40%;
-  }
-
-  #about h2 {
-    
   }
 
   /* Footer */
